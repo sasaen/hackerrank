@@ -1,2 +1,2 @@
 # hackerrank
-Solutions to some interview questions in hackerrank
+Solutions to some interview questions done in hackerrank.
