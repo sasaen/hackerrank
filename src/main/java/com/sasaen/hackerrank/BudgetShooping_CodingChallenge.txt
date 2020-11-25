@@ -1,0 +1,94 @@
+
+Budget Shopping
+
+Helen has n dollars budgeted to purchase Math notebooks. There are m stores that stock unlimited supplies of notebooks in bundles, but the size and price of the bundles vary from store to store. Helen can purchase as many bundles as she wants from as many stores as necessary until she depletes her budget, but her goal is to purchase a maximal number of notebooks. For example, if Helen has n = 5 dollars and there are m = 2 shops where one sells 4-notebook bundles for 2 dollars a piece and the other sells 2-notebook bundles for 1 dollar a piece, she will buy a total of 4 + 4 + 2 = 10 notebooks (two bundles of 4 from the first shop and one bundle of 2 from the second shop).
+
+ 
+
+Function Description
+
+Complete the budgetShopping function in the editor below. It has three parameters:
+Parameters 	
+Name 	Type 	Description
+n 	integer 	The number of dollars in Helen's notebook budget
+bundleQuantities 	integer array 	Each bundleQuantitiesi (where 0 ≤ i < m) denotes the number of notebooks per bundle at shop i.
+bundleCosts 	integer array 	Each bundleCostsi (where 0 ≤ i < m) denotes the cost of each bundle at shop i.
+Return 	
+
+The function must return an integer denoting the maximum number of notebooks she can buy with n dollars.
+
+ 
+
+Constraints
+
+    1 ≤ n ≤ 104
+    1 ≤ m ≤ 102
+    1 ≤ bundleQuantitiesi ≤ 20
+    1 ≤ bundleCostsi ≤ 200
+
+Input Format For Custom Testing
+
+The first line contains an integer, n, denoting the number of dollars in Helen's notebook budget.
+
+The next line contains an integer, m, denoting the number of shops.
+
+Each line i of the m subsequent lines (where 0 ≤ i < m) contains an integer describing bundleQuantitiesi.
+
+The next line contains an integer, m, denoting the number of shops.
+
+Each line i of the m subsequent lines (where 0 ≤ i < m) contains an integer describing bundleCostsi.
+Sample Case 0
+
+Sample Input
+
+50
+2
+20
+19
+2
+24
+20
+
+ 
+
+Sample Output
+
+40
+
+ 
+
+Explanation
+
+Helen has n = 50 dollars to purchase notebooks from the m = 2 stores described by bundleQuantities = [20, 19] and bundleCosts = [24, 20]. She makes the following purchases:
+
+    One bundle of 20 notebooks from shop 0 at a cost of 24 dollars and has n = 50 − 24 = 26 dollars left.
+    One bundle of 20 notebooks from shop 0 at a cost of 24 dollars and has 26 - 24 = 2 dollars left.
+
+Helen can't afford any more notebooks, so we return the total number of notebooks she was able to purchase: 20 + 20 = 40.
+Sample Case 1
+
+Sample Input
+
+4
+1
+10
+1
+2
+20
+
+ 
+
+Sample Output
+
+20
+
+ 
+
+Explanation
+
+Helen has n = 4 dollars to purchase notebooks from the m = 1 store described by bundleQuantities = [10] and bundleCosts = [2]. She makes the following purchases:
+
+    One bundle of 10 notebooks from shop 0 at a cost of 2 dollars and has n = 4 − 2 = 2 dollars left.
+    One bundle of 10 notebooks from shop 0 at a cost of 2 dollars and has 2 − 2 = 0 dollars left.
+
+Helen can't afford any more notebooks, so we return the total number of notebooks she was able to purchase: 10 + 10 = 20.

@@ -1,0 +1,84 @@
+Consecutive Sum
+
+Given a long integer, num, find the number of ways to represent it as a sum of two or more consecutive positive integers. For example:
+
+ 
+
+    If num = 15, then there are three such ways: (1 + 2 + 3 + 4 + 5) = (4 + 5 + 6) = (7 + 8) = 15.
+    If num = 2, then there are zero such ways.
+
+ 
+
+Complete the consecutive function in the editor below. It has one parameter: a long integer named num. The function must return an integer denoting the number of ways to represent num as a sum of two or more consecutive positive integers.
+
+ 
+
+Input Format
+
+Locked stub code in the editor reads a long integer denoting num from stdin and passes it to the function.
+
+ 
+
+Constraints
+
+    1 ≤ num ≤ 1012
+
+ 
+
+Output Format
+
+Return an integer denoting the number of ways to represent num as a sum of two or more consecutive positive integers.
+
+ 
+
+Sample Input 0
+
+15
+
+ 
+
+Sample Output 0
+
+3
+
+ 
+
+Explanation 0
+
+There are three ways to calculate num = 15 as a sum of two or more consecutive integers:
+
+ 
+
+    1 + 2 + 3 + 4 + 5 = 15
+    4 + 5 + 6 = 15
+    7 + 8 =15
+
+ 
+
+Thus, the function returns 3.
+
+ 
+
+Sample Input 1
+
+10
+
+ 
+
+Sample Output 1
+
+1
+
+ 
+
+Explanation 1
+
+There is one way to calculate num = 10 as a sum of two or more consecutive integers:
+
+ 
+
+    1 + 2 + 3 + 4 =10
+
+ 
+
+Thus, the function returns 1.
